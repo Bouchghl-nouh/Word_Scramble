@@ -1,0 +1,26 @@
+.Start{
+margin: 0 auto ;
+}
+.Start-container{
+    width: 80%;
+    margin: 200px auto 0 ;
+    text-align: center;
+}
+.Start-container p {
+    background-color: #eee;
+    font-size: 24px ;
+    padding: 3px 20px ;
+    width: fit-content;
+    margin: 10px auto;
+}
+.Start-container .How_To_Play:hover{
+color:green ;
+}
+.Start-Playing{
+    background-color: transparent;
+    border: none;
+}
+.Popup-container{
+    display: flex;
+    justify-content: center;
+}

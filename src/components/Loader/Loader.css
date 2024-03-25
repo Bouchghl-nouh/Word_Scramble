@@ -1,0 +1,12 @@
+.loading{
+    margin-top: 50px;
+    height: 400px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.loading img{
+    max-width: 100%;
+    max-height: 100%;
+}

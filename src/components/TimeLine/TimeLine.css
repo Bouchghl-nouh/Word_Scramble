@@ -1,0 +1,30 @@
+
+.timer_Container{
+    position: absolute;
+    width: 511px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 2%/50%;
+    margin: 0 auto ;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+ .time_line{
+  width: 0px;
+    height: 10px;
+    background-color:green ;
+    position: absolute;
+    border-radius: 2%/50%;
+    animation : timerAnimation 10s linear forwards ;
+   
+}
+
+@keyframes timerAnimation {
+    0%{width:0;};
+    60%{background-color: orange;}
+    90%{background-color: red;}
+    100%{width:511px; background-color: red;}
+}

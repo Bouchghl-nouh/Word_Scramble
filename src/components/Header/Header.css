@@ -1,0 +1,10 @@
+.Header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px ;
+}
+.score-container{
+    font-size: 20px;
+    width:fit-content ;
+}
