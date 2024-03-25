@@ -57,7 +57,7 @@ const Content = ({define, word,Res,setWord}) => {
 useEffect(()=>{
 
     if(result || ending){
-        setAnimation(prev => !prev);
+        setAnimation(false);
         const wordRes = Olett.join('');
         if(Res === wordRes && !ending ){
             setScore(score=> score+10)
