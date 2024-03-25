@@ -18,7 +18,7 @@ useEffect(()=>{
     let ignore = false;
     try{
       setLoading(true)
-          console.log(word);
+          // console.log(word);
             const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
             if(!ignore){
               setDef(response.data[0].meanings[0].definitions[0].definition);

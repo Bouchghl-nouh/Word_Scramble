@@ -9,6 +9,7 @@ const Content = ({define, word,Res,setWord}) => {
     const [Olett,setOlett] = useState(Ulett.map(() => null));
     const [arr, setArr] = useState(Array.from({ length: word.length }, () => null));
     const timeoutRef = useRef(null);
+
     const result = Olett.every(lett=> lett !== null);
    const handleClick = (letter ,index)=>{
     if(!(result || ending)){
@@ -70,7 +71,7 @@ useEffect(()=>{
         setTimeout(()=>{setWord(generate())},3000);
         return ()=>{clearTimeout(timeoutRef.current)}
     }
-},[Olett,ending])
+},[Olett,ending])//eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div>
@@ -87,6 +88,7 @@ useEffect(()=>{
         <button onClick={()=>handleClick(letter,index)} key={index}> <span >{letter}</span></button>
        ))}
         </div>
+        {(result || ending) && <div className='correct-answer'>The correct answer is : <span>{Res}</span></div>}
         <TimeLine />
      </div>
   )
