@@ -18,6 +18,7 @@ useEffect(()=>{
     let ignore = false;
     try{
       setLoading(true)
+      setAnimation(prev => !prev);
           // console.log(word);
             const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
             if(!ignore){
